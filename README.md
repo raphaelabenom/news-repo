@@ -1,1 +1,1 @@
-# news-repo
+# News Repo
