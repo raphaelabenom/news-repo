@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  database:
+    image: "postgres:16.1-alpine3.18" # imagem version
+    restart: always
+    environment: # variaveis de ambiente
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - "5432:5432" # "host:container"
+
+  mailcatcher:
+    ...
+  redis:
+    ...
