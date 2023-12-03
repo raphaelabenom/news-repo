@@ -5,7 +5,7 @@ services:
     image: "postgres:16.1-alpine3.18" # imagem version
     restart: always
     env_file:
-      - ../.env
+      - ../.env.development
     ports:
       - "5432:5432" # "host:container"
     # env_file:
